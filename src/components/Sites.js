@@ -6,7 +6,7 @@ const Sites = () => {
     return (
         <div className='sites'>
             <div className='gifs'>
-                <p>Word-Encrypting Website</p>
+                <p>Word-Encryption Website</p>
                 <a className='links' href='http://encrypt-me-app.herokuapp.com/'>See it online</a>
                 <img className='gifImg' src={EncryptMe} alt='loading...'/>
             </div>
