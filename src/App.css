@@ -1,32 +1,222 @@
-.App {
-  text-align: center;
+
+.headerIntro {
+    margin-top: -40px;
+    padding-top: 200px;
+    padding-bottom: 325px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  )
+}
+.headerIntro h1 {
+    font-size: 7em;
+    margin-bottom: 0;
+    font-weight: lighter;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.headerIntro h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: lighter;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button {
+    background: transparent;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    border: 2px solid darkgray;
+    border-radius: 8px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+  
+.button:hover {
+    transition: 0.3s;
+    background-color: darkorange;
 }
 
-.App-link {
-  color: #61dafb;
+/* .sites-background:before {
+    background-image: url('blurry.png');
+    background-size: cover;
+    content: ' ';
+    opacity: 0.4;
+    box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    z-index: -2;
+} */
+
+.sites-background {
+    /* background-color: rgb(82, 82, 82); */
+    background: inherit;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(200, 200, 200);
+    color: rgb(80, 79, 79);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sites-background h1 {
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+.page-headers {
+    font-size: 3em;
+}
+
+.sites {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.sites a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 300;
+    color: rgb(80, 79, 79);
+    text-transform: uppercase;
+    border: 2px solid darkgray;
+    border-radius: 8px;
+    padding-top: 3%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 20px;
+    padding-bottom: 3%;
+}
+
+.sites a:hover {
+    transition: 0.3s;
+    background-color: darkorange;
+    border: 2px solid white;
+    color:white;
+}
+
+.gifs {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.gifs p {
+    font-size: 2.5em
+}
+
+.gifImg {
+    border: 5px solid rgb(71, 71, 71);
+    border-radius: 10px;
+    box-shadow: 8px 10px 10px 5px rgba(0, 0, 0, 0.692);
+}
+
+.last-half {
+    padding-top: 50px;
+}
+
+.knowledge {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 25px;
+}
+
+.badge {
+    padding-bottom: 50px;
+}
+
+.about {
+    background-color: rgb(200, 200, 200);
+    color: rgb(80, 79, 79);
+    padding-top: 50px;
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-bottom: 40px;
+}
+
+.about p {
+    font-size: 1.25em;
+}
+
+.contact {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.contact h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.footer {
+    font-size: 11px;
+    padding-bottom: 35px;
+}
+
+@media only screen and (max-width:1220px){
+    .sites {
+        flex-direction: column;
+    }
+
+    .gifs {
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .headerIntro h1 {
+        font-size: 3.5em;
+    }
+
+    .headerIntro h2 {
+        font-size: 1.5em;
+    }
+
+    .page-headers {
+        font-size: 2.25em;
+    }
+
+    .sites a {
+        font-size: 0.5em;
+    }
+
+    .gifs p {
+        font-size: 1.25em
+    }
+
+    .gifImg {
+        width: 275px;
+        height: auto;
+    }
+
+    /* .sites {
+        width: 100px;
+        height: auto;
+    } */
+}
+
+@media only screen and (max-width:650px){
+    .knowledge {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .knowledge {
+        margin-left: -50px;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
 }

@@ -1,28 +1,48 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Knowledge from './components/Knowledge'
+import Sites from './components/Sites'
+import About from './components/About'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import './App.css'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+class App extends React.Component {
+    constructor(){
+        super()
+        this.state = {
+
+        }
+    }
+
+    handleClick = () => {
+        window.scroll({
+            top: 3600,
+            behavior: "smooth"
+        })
+    }
+
+    render(){
+        return(
+            <div>
+                <div className='headerIntro'>
+                    <h1>Hi, I'm Justin</h1>
+                    <h2>I'm a Web Developer</h2>
+                    <button className='button' onClick={this.handleClick}>Let's get in touch!</button>
+                </div>
+                <div className='sites-background'>
+                    <h1 className='page-headers'>Checkout my sites:</h1>
+                    <Sites />
+                </div>
+                <div className='last-half'>
+                    <h1 className='page-headers'>What I work with currently:</h1>
+                    <Knowledge />
+                    <About />
+                    <Contact />
+                </div>
+                <Footer />
+            </div>
+        )
+    }
 }
 
-export default App;
+export default App
