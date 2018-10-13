@@ -138,10 +138,16 @@
 .about {
     background-color: rgb(200, 200, 200);
     color: rgb(80, 79, 79);
-    padding-top: 50px;
+    padding-top: 40px;
     padding-left: 14%;
     padding-right: 14%;
     padding-bottom: 40px;
+}
+
+.my-photo {
+    border-radius: 100px;
+    width: 275px;
+    height: auto;
 }
 
 .about p {
@@ -196,6 +202,11 @@
 
     .gifImg {
         width: 275px;
+        height: auto;
+    }
+
+    .my-photo {
+        width: 175px;
         height: auto;
     }
 

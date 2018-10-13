@@ -16,7 +16,7 @@ class App extends React.Component {
 
     handleClick = () => {
         window.scroll({
-            top: 3600,
+            top: 3750,
             behavior: "smooth"
         })
     }
